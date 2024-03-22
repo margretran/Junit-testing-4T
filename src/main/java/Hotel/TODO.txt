@@ -1,0 +1,6 @@
+HotelController:
+
+// TODO implement maxPrice check and test
+// TODO set date local, ensure correct format
+// TODO validate: location has hotels in database?
+// ( TODO validate: flights available? )
