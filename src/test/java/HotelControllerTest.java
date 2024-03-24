@@ -9,6 +9,21 @@ import static org.mockito.Mockito.*;
 
 public class HotelControllerTest {
 
+    private searchInterface mockHotelInterface;
+    private HotelController hotelController;
+    
+    @BeforeEach
+    void setUp() {
+        // Mock the searchInterface
+        mockHotelInterface = mock(searchInterface.class);
+        hotelController = new HotelController(mockHotelInterface);
+    }
+    @AfterEach
+    void tearDown() {
+        hotelController = null;
+    }    
+    
+    
     @Test
     public void testGetSearchResults() {
         searchInterface mockHotelInterface = mock(searchInterface.class);
